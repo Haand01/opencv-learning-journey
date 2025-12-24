@@ -11,7 +11,7 @@ image_gray = cv2.imread(os.path.join("./","assets", "handwriting.png"), cv2.IMRE
 # print("Threshold Value: ", ret)
 # print(threshold)
 # cv2.waitKey(0)
-
+ 
 #adaptive thresholding
 adaptive_thresh = cv2.adaptiveThreshold(image_gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
 cv2.imshow("Adaptive Thresholding", adaptive_thresh)
